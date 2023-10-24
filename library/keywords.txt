@@ -9,3 +9,4 @@ Arctic344_PCA9685_motorDriver	KEYWORD1
 #######################################
 
 begin	KEYWORD2 
+setMotorSpeed	KEYWORD2 
