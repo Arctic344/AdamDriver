@@ -11,7 +11,7 @@ public:
     void begin();
     void setMotorSpeed(uint8_t motorNumber, short motorSpeed);
 private:
-    Adafruit_PWMServoDriver pwm;
+    Adafruit_PWMServoDriver pwm(_addr);
     uint8_t _addr;
 }
 

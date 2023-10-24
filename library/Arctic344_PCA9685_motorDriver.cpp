@@ -4,6 +4,7 @@
 Arctic344_PCA9685_motorDriver::Arctic344_PCA9685_motorDriver(uint8_t I2Caddr)
 {
   _addr = I2Caddr;
+  _pwm = Adafruit_PWMServoDriver(_addr);
   uint8_t[4][3] = {
     {1,2,3}
     {1,2,3}
