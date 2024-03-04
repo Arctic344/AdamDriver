@@ -1,7 +1,7 @@
 #include "Arduino.h"
-#include "Arctic344_PCA9685_motorDriver.h"
+#include "AdamDriver.h"
 
-Arctic344_PCA9685_motorDriver::Arctic344_PCA9685_motorDriver(uint8_t I2Caddr)
+AdamDriver::AdamDriver(uint8_t I2Caddr)
 {
   _addr = I2Caddr;
   _pwm = Adafruit_PWMServoDriver(_addr);
@@ -14,11 +14,11 @@ Arctic344_PCA9685_motorDriver::Arctic344_PCA9685_motorDriver(uint8_t I2Caddr)
 }
 
 
-void Arctic344_PCA9685_motorDriver::begin() {
+void AdamDriver::begin() {
   Serial.println("began the driver")
 }
 
-void Arctic344_PCA9685_motorDriver::setMotorSpeed(uint8_t motorNumber, short motorSpeed) {
+void AdamDriver::setMotorSpeed(uint8_t motorNumber, short motorSpeed) {
   Serial.println("Setting a motors speed");
   Serial.print("Motor:");
   Serial.println(motorNumber);

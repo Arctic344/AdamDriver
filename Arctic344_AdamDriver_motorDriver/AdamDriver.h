@@ -1,13 +1,13 @@
-#ifndef Arctic344_PCA9685_motorDriver
-#define Arctic344_PCA9685_motorDriver
+#ifndef AdamDriver
+#define AdamDriver
 
 #include "Arduino.h"
 #include <Adafruit_PWMServoDriver.h>
 
-class Arctic344_PCA9685_motorDriver
+class AdamDriver
 {
 public:
-    Arctic344_PCA9685_motorDriver();
+    AdamDriver();
     void begin();
     void setMotorSpeed(uint8_t motorNumber, short motorSpeed);
 private:
