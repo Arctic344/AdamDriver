@@ -1,0 +1,5 @@
+{
+    "board": "arduino:avr:uno",
+    "programmer": "avrisp",
+    "sketch": "Arctic344_AdamDriver_motorDriver/examples/MotorTest/MotorTest.ino"
+}
